@@ -9,7 +9,7 @@
     <img src="./assets/img/DD-removebg-preview.png" width="130" height="100">
   </a>
 <!-- TODO: Change Title to the name of the title of your Project -->
-  <h3 align="center">WD-SW4</h3>
+  <h3 align="center">WD-SW4-main</h3>
 </div>
 <!-- TODO: Make a short description -->
 <div align="center">

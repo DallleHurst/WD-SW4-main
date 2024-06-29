@@ -1,0 +1,156 @@
+html, body {
+  background-color: #000;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+}
+
+header {
+  font: 100% system-ui, sans-serif;
+  width: 100%;
+  position: relative;
+  z-index: 1;
+}
+
+.hero {
+  position: relative;
+  background-image: url('https://images.pexels.com/photos/869258/pexels-photo-869258.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 100vh;
+  z-index: 0;
+}
+
+.hero_content {
+  text-align: left;
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  transform: translate(0%, -50%);
+  transition: all ease 0.3s;
+  z-index: 1;
+}
+
+h1 {
+  font-size: 60px;
+  margin: 0;
+  font-weight: 900;
+  color: rgb(0, 0, 0);
+}
+
+.explore {
+  text-align: left;
+}
+
+button {
+  cursor: pointer;
+  margin: 1rem;
+  color: rgb(0, 0, 0);
+  letter-spacing: 2px;
+  border: none;
+  background-color: cyan;
+  border-radius: 30px;
+  width: 120px;
+  height: 50px;
+  z-index: 1;
+}
+
+p {
+  margin: 0;
+  font-size: 15px;
+  color: rgb(0, 0, 0);
+}
+
+.picture {
+  margin: 1rem;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+a {
+  color: black;
+  cursor: pointer;
+}
+
+@media (max-width: 1090px) {
+  h1 {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 700px) {
+  .hero_content {
+    background-color: #ffedde;
+    width: 400px;
+    padding: 20px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .explore {
+    text-align: center;
+  }
+}
+
+.button {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  display: inline-block;
+  z-index: 2; /* Ensure the button is in front */
+}
+
+.button a {
+  color: white;
+  font-family: Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 20px; /* Adjusted for a smaller size */
+  text-align: center;
+  text-decoration: none;
+  background-color: rgb(60, 255, 255);
+  display: block;
+  position: relative;
+  padding: 10px 20px; /* Adjusted for a smaller size */
+  
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  text-shadow: 0px 1px 0px #000;
+  filter: dropshadow(color=#000, offx=0px, offy=1px);
+  
+  -webkit-box-shadow: inset 0 1px 0 #FFE5C4, 0 10px 0 rgb(0, 117, 117);
+  -moz-box-shadow: inset 0 1px 0 #FFE5C4, 0 10px 0 rgb(0, 117, 117);
+  box-shadow: inset 0 1px 0 #FFE5C4, 0 10px 0 rgb(0, 117, 117);
+  
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+
+.button a:active {
+  top: 5px; /* Adjusted for a smaller size */
+  background-color: cyan;
+  
+  -webkit-box-shadow: inset 0 1px 0 #FFE5C4, inset 0 -3px 0 rgb(0, 117, 117);
+  -moz-box-shadow: inset 0 1px 0 #FFE5C4, inset 0 -3px 0 rgb(0, 117, 117);
+  box-shadow: inset 0 1px 0 #FFE5C4, inset 0 -3px 0 rgb(0, 117, 117);
+}
+
+.button:after {
+  content: "";
+  height: 100%;
+  width: 100%;
+  padding: 4px;
+  position: absolute;
+  bottom: -15px;
+  left: -4px;
+  z-index: -1;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}

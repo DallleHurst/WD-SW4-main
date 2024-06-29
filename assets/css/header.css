@@ -1,0 +1,143 @@
+header {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Prevent horizontal scroll */
+    scroll-behavior: smooth; /* Smooth scrolling */
+}
+
+.container-fluid.main {
+    position: relative;
+    padding: 0;
+}
+
+.carousel {
+    position: relative;
+    width: 100%;
+    height: 700px;
+}
+
+.carousel-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.carousel .background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+.carousel .background.active {
+    opacity: 1;
+}
+
+.carousel .background.a {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://images.pexels.com/photos/26509897/pexels-photo-26509897/free-photo-of-a-trail-going-through-the-forest.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+}
+
+.carousel .background.b {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://plus.unsplash.com/premium_photo-1668875380749-ed0a257af674?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8d2hpdGUlMjBsYW5kc2NhcGV8ZW58MHx8MHx8fDA%3D");
+}
+
+.carousel .background.c {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://images.unsplash.com/photo-1523306172114-888e0f65fa8d?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8d2hpdGUlMjBsYW5kc2NhcGV8ZW58MHx8MHx8fDA%3D");
+}
+
+.covertext {
+    position: absolute;
+    top: 200px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    color: #ffffff;
+}
+
+.title {
+    font-family: Verdana;
+    font-weight: 600;
+    font-size: 60px;
+}
+
+.subtitle {
+    font-family: Verdana;
+    font-size: 23px;
+}
+
+.explore {
+    margin-top: 10px;
+}
+
+.explore .btn-lg,
+.explore .btn-lg:hover {
+    border-radius: 30px;
+    padding: 15px 25px;
+    font-size: 22px;
+    background-color: cyan;
+    border-color: cyan;
+    color: #ffffff;
+}
+
+.btn,
+.btn:hover {
+    border-radius: 0;
+    background-color: cyan;
+    border-color: cyan;
+    color: #ffffff;
+    margin-bottom: 20px;
+    box-shadow: none;
+    outline: none;
+}
+
+.btn:focus,
+.btn:active:focus,
+.btn.active:focus,
+.btn.focus,
+.btn:active.focus,
+.btn.active.focus {
+    color: #ffffff;
+    outline: none;
+}
+
+/* Carousel Animation */
+@keyframes carouselFade {
+    0% {
+        opacity: 1;
+    }
+    33.333% {
+        opacity: 0;
+    }
+    66.666% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.carousel .background.a {
+    animation: carouselFade 9s infinite;
+}
+
+.carousel .background.b {
+    animation: carouselFade 9s infinite 3s;
+}
+
+.carousel .background.c {
+    animation: carouselFade 9s infinite 6s;
+}
+
+/* Additional content section styling */
+.content {
+    padding: 50px;
+    background-color: #ffffff;
+}

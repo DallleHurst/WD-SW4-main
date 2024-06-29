@@ -126,4 +126,4 @@ WD-ProjectName
 Wait for the landing page header background to load then press explore or scroll down to see the landing page press click me to see the feature pages to go back on the first page press Go Back on the top left corner and for the feature 2 on the top right corner you can access the feature 1 below the feature 2 footer
 
 ## Deployment link
-https://johnarvintum.github.io/WD-Seatwork-4-main/
+https://dalllehurst.github.io/WD-SW4-main/
